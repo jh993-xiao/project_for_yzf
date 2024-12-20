@@ -1,0 +1,39 @@
+#钉钉登录信息
+DingDing:
+  Message:
+    mobile: +86-18110677819
+    pwd: a1143219312
+    goto: https://oapi.dingtalk.com/connect/oauth2/sns_authorize?appid=dingoafdmoqwaiilrfoojp&response_type=code&scope=snsapi_login&state=STATE&redirect_uri=https%3A%2F%2Fadminsso.yunzhangfang.com%2FdingdingSubmit%3Furl%3Dhttps%3A%2F%2Ftaxsupport.yunzhangfang.com%2FmyZone
+    araAppkey: 1917
+    araToken: 0#19171720064585558514014543461731316634840734G0360EF9C757166432CCC1593A621770E05BCE3
+    araScene: login
+    type: h5
+  URL:
+    login_url: https://login.dingtalk.com/login/login_with_pwd
+
+#大数据登录信息
+BigQuery:
+  Message:
+    username: wangxue1@yunzhangfang.com
+    password: 123456
+    csrfmiddlewaretoken:
+    next: /
+  URL:
+    #  获取sessionid和csrftoken
+    - http://bigquery.yunzhangfang.com:8101/hue/accounts/login?next=/
+    #  提交表单登录
+    - http://bigquery.yunzhangfang.com:8101/hue/accounts/login
+
+Cookie:
+    # 钉钉Cookie
+    dd_access_token:
+    dd_refresh_token:
+    33ea3b9c8d374d20a81450c44a0c2f81: WyIzMjEwMDA1OTU5Il0
+    userInfo: "{%22userId%22:1942%2C%22username%22:%22%E7%BA%AA%E8%B1%AA%22%2C%22email%22:%22jihao@yunzhangfang.com%22}"
+    # 数舟部分Cookie
+    sourceType: host
+    tenant_id: master
+    tenant_code: master
+    # 大数据Cookie
+    sessionid:
+    csrftoken:
